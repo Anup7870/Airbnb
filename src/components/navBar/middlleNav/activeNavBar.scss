@@ -1,0 +1,100 @@
+.activeCont{
+    //padding: 0.5rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 40px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 40px;
+    display: none;
+    .activeContWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .child1,.child2,.child3{
+            padding:10px 20px;
+        }
+        .child1,.child2,.child3 lable{
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 16px;
+
+        }
+        .child1{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            input{
+                width: 100%;
+                font-size: 14px;
+                line-height: 18px;
+                color: #717171;
+                font-weight: 400;
+                text-overflow: ellipsis;
+                border: none;
+                outline: none;
+            }
+
+        }
+        //.child1:after{
+        //    position: absolute;
+        //    content: "";
+        //    right: 0;
+        //    background-color: #717171;
+        //    width: 2px;
+        //    height: 100%;
+        //}
+
+        .child2{
+            display: flex;
+            position: relative;
+            gap: 20px;
+            p{
+                font-size: 14px;
+                line-height: 18px;
+                color: #717171;
+                font-weight: 400;
+                text-overflow: ellipsis;
+            }
+        }
+        //.child2:after{
+        //    position: absolute;
+        //    content: "";
+        //    right: 0;
+        //    background-color: #717171;
+        //    width: 2px;
+        //    height: 100%;
+        //}
+        .child3{
+            display: flex;
+            gap: 5rem;
+            p{
+                font-size: 14px;
+                line-height: 18px;
+                color: #717171;
+                font-weight: 400;
+                text-overflow: ellipsis;
+            }
+            .search{
+                height: 2em;
+                width: 2em;
+            }
+
+            button{
+                width: 48px;
+                height: 48px;
+               background: #FF385C;
+                border: none;
+                border-radius: 50%;
+            }
+
+        }
+
+    }
+
+}

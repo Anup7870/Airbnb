@@ -1,0 +1,100 @@
+.navBarcont{
+  position: sticky;
+  top: 0;
+  padding: 1rem 2.5rem;
+    border-bottom:1px solid #DDDDDD ;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+      height: 2rem;
+        cursor: pointer;
+    }
+    .MiddleNav{
+
+    }
+    .endNav{
+      display: flex;
+
+    }
+
+  }
+}
+
+// sub comp
+
+.endNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .buttonNavEnd{
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        p{
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+        }
+
+    }
+
+    .buttonNavEnd:hover{
+        background: #F7F7F7;
+    }
+
+    .worldLogo{
+        width: 19px;
+        height: 19px;
+        padding: 8px 12px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    .worldLogo:hover{
+        background: #F7F7F7;
+    }
+    .mainProfileCont{
+        position: relative;
+        z-index: 1;
+        .profileCont{
+            padding: 0.5rem;
+            border: 1px solid #DDDDDD;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            .bars{
+                width: 18px;
+                height: 12px;
+                color: #424242;
+            }
+            .profileLogo{
+                width: 28px;
+                height: 28px;
+            }
+        }
+        .profileCont:hover{
+            box-shadow: 0 2px 4px rgba(0,0,0,0.18),0 4px 12px rgba(0,0,0,0.05);
+        }
+    }
+
+
+
+
+}
+

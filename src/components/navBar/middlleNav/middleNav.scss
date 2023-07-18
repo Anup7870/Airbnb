@@ -1,0 +1,101 @@
+.middleNavCont{
+    padding: 0.5rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 40px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 50px;
+    //display: none;
+    .intial{
+        display: flex;
+        justify-content:flex-start ;
+        align-items: center;
+
+        .line{
+            background: #DDDDDD;
+            height: 24px;
+            width: 1px;
+        }
+
+
+        .navButtonMiddle{
+            margin: 0 0.5rem;
+        }
+
+        .intialButton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .addGuest{
+                color: #717171;
+                font-weight: 400;
+            }
+            .logoSearch {
+                background: #ff385c;
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            ;
+            }
+            .logoSvg{
+                width: 17px;
+            }
+
+        }
+
+    }
+    .intial > div{
+        margin-left: 10px;
+    }
+}
+.middleNavCont:hover{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18),0 4px 12px rgba(0,0,0,0.05);
+}
+
+.middleMoreCont{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: inherit;
+    margin-left: 10px;
+    display: none;
+    .moreNavItem{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        margin: 0 20px;
+    }
+    .moreNavItem:hover{
+        opacity: 0.65;
+    }
+
+    .moreNavItem:hover::after{
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #717171;
+        transform: scaleX(1);
+        transition:  transform 0.25s cubic-bezier(0.2,0,0,1);
+    }
+    .active:after{
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #424242;
+    }
+}
