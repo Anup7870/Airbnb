@@ -1,0 +1,54 @@
+.filterCont{
+    display: flex;
+    width: 100%;
+    margin-top: 102px;
+    .navFilter{
+        .navFilterItems{
+            .icons{
+                cursor:pointer;
+                img{
+                    opacity: .6;
+                }
+            }
+            .icons:hover{
+                img{
+                    opacity: 1;
+                }
+                p{
+                    color: black;
+                }
+            }
+        }
+    }
+    .filter{
+        padding: 0px 5px;
+        border: 1px solid #DDDDDD;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+
+}
+.navFilterItems{
+    display: flex;
+    gap: 60px;
+    .icons{
+        text-align: center;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        p{
+            font-size: 10px;
+            line-height: 16px;
+            color: #717171;
+            font-weight: 600;
+            text-overflow: ellipsis;
+        }
+    }
+}
