@@ -1,8 +1,12 @@
 import {IconContext} from "react-icons";
 import {BiSearch} from "react-icons/bi";
 import './middleNav.scss'
-const MiddleNav = ()=>{
+import {useContext} from "react";
+import Context from "../../../context api/context.js";
 
+const MiddleNav = ()=>{
+  const a =useContext(Context)
+  console.log(a.navS?.open);
   return(
       <>
         <div className="middleMoreCont">

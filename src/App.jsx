@@ -1,13 +1,11 @@
 import './App.css'
-import {NavBar} from "./components/navBar/NavBar.jsx";
-import NavContext from "./context api/NavBar/NavContext.jsx";
+import Home from './Pages/Home/Home.jsx'
 function App() {
-
   return (
     <>
-      <NavContext>
-        <NavBar/>
-      </NavContext>
+      <div className="main">
+        <Home/>
+      </div>
 
     </>
   )

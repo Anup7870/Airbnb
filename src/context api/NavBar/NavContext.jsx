@@ -1,12 +1,15 @@
 import Context from "../context.js";
+import {useState} from "react";
+
 
 const NavState =(props)=>{
   const state={
-      "name" : "Anup",
-      "class" : "bseIT"
+     "open":false,
   }
+
+  const [navS, setNavs] = useState(state)
   return(
-      <Context.Provider value={{state}}>
+      <Context.Provider value={{navS,setNavs}}>
           {/* eslint-disable-next-line react/prop-types */}
         {props.children}
       </Context.Provider>

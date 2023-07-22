@@ -1,5 +1,4 @@
 .activeCont{
-    //padding: 0.5rem;
     border: 1px solid #DDDDDD;
     border-radius: 40px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05);
@@ -11,6 +10,7 @@
     margin-top: 10px;
     margin-right: 40px;
     display: none;
+
     .activeContWrapper{
         display: flex;
         flex-direction: row;
@@ -18,7 +18,7 @@
         .child1,.child2,.child3{
             padding:10px 20px;
         }
-        .child1,.child2,.child3 lable{
+        .child1 lable,.child2 lable,.child3 lable{
             font-size: 12px;
             font-weight: 800;
             line-height: 16px;
@@ -41,14 +41,6 @@
             }
 
         }
-        //.child1:after{
-        //    position: absolute;
-        //    content: "";
-        //    right: 0;
-        //    background-color: #717171;
-        //    width: 2px;
-        //    height: 100%;
-        //}
 
         .child2{
             display: flex;

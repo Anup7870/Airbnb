@@ -1,6 +1,6 @@
 import logo from "../../assets/Logo/long-logo.png"
 import './navBar.scss'
-import {useState} from "react";
+import {createContext, useEffect, useState} from "react";
 import {IconContext} from "react-icons";
 import {TbWorld} from "react-icons/tb"
 import {FaBars} from "react-icons/fa"
@@ -8,14 +8,12 @@ import {CgProfile} from "react-icons/cg"
 import {Setting} from "./Setting.jsx";
 import MiddleNav from "./middlleNav/MiddleNav.jsx";
 import {ActiveMiddleNav} from "./middlleNav/ActiveMiddleNav.jsx";
-import {useContext} from "react";
-import NavState from "../../context api/NavBar/NavContext.jsx";
+
 // Sub component parts
 
 const EndNav = () =>{
   const [setting, setSetting]= useState(false)
-  const a = useContext(NavState)
-  console.log(a)
+
   return (
       <>
         <div className="endNav">
@@ -35,12 +33,11 @@ const EndNav = () =>{
             </div>
             <Setting values={setting}/>
           </div>
-
         </div>
       </>
-
   )
 }
+
 export function NavBar() {
   return (
       <>
@@ -55,3 +52,4 @@ export function NavBar() {
       </>
   )
 }
+

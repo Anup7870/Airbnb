@@ -1,5 +1,5 @@
 .navBarcont{
-  position: sticky;
+  position: fixed;
   top: 0;
   padding: 1rem 2.5rem;
     border-bottom:1px solid #DDDDDD ;
@@ -8,7 +8,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    //z-index: 999;
+    background-color: white;
 
   nav{
     width: 100%;
