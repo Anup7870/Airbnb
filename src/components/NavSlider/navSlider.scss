@@ -1,5 +1,6 @@
 .filterCont{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     margin-top: 102px;
     .navFilter{
@@ -8,6 +9,7 @@
                 cursor:pointer;
                 img{
                     opacity: .6;
+                    z-index: -1;
                 }
             }
             .icons:hover{

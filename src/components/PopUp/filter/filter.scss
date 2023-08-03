@@ -1,0 +1,234 @@
+.line {
+    width: 20px;
+    height: 1px;
+    background-color: black;
+}
+
+.padding {
+    padding: 10px 0px;
+}
+
+.margin {
+    margin: 30px 0px !important;
+}
+
+.between {
+    width: 100%;
+    margin: 5px 0;
+    background-color: #ccc;
+}
+
+.popcardCont {
+    transition: bot-top 1s ease forwards;
+    background-color: rgba(155, 155, 155, 0.72);
+    height: 100vh;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    .popcard {
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 10px;
+        width: 820px;
+        max-width: 80%;
+        height: 550px;
+
+        .popCardWrapper {
+            .headerPop {
+                position: sticky;
+
+                .headerPopcont {
+                    display: flex;
+                    width: 50%;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 15px;
+
+                    button {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        border: none;
+                        background-color: white;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    button:hover {
+                        background-color: #ccc;
+                    }
+
+
+                }
+
+                border-bottom: 1px solid #ccc;
+            }
+
+            .filterMain {
+                padding: 20px;
+                height: 400px;
+                overflow-y: scroll;
+
+                .priceRange {
+                    .info {
+                        h2 {
+                            font-size: 22px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #717171;
+                            ;
+                        }
+
+                        .heading {
+                            color: #222222;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                        .price {
+                            padding: 20px;
+
+                            .priceRangeForm {
+                                padding: 20px;
+                                align-items: center;
+                                justify-content: space-between;
+                                gap: 15px;
+                                display: flex;
+
+                                .input {
+                                    width: 100%;
+                                    // height: 80px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 5px;
+                                    padding: 5px 10px;
+                                    // margin: 10px 0;
+
+                                    input {
+                                        outline: none;
+                                        border: none;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .type {
+                        .inputChecks {
+                            margin-top: 10px;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-row-gap: 15px;
+
+                            .inputcheck {
+                                display: flex;
+                                gap: 10px;
+
+                                input {
+                                    width: 20px;
+                                    height: 20px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    .property {
+                        h2 {
+                            margin-bottom: 10px;
+                            font-size: 22px;
+                        }
+
+                        .opt {
+                            margin: 15px 0;
+                            display: flex;
+                            gap: 20px;
+                            font-size: 16px;
+                            line-height: 20px;
+
+                            .show {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 70px;
+                                height: 40px;
+                                border-radius: 18px;
+                                border: 1px solid #ccc;
+                                background: rgb(34, 34, 34);
+                                color: white;
+                                font-size: 16px;
+                                line-height: 20px;
+                                cursor: pointer;
+                            }
+                            
+                        }
+
+                       
+                    }
+                    .type{
+                        .types{
+                            margin: 15px 0;
+                            display: flex;
+                            justify-content: space-between;
+                            .box{
+                                width: 22%;
+                                height: 150px;
+                                border: 1px solid #ccc;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                padding: 10px 10px;
+                                border-radius: 10px;
+                                cursor: pointer;
+                            }
+                            .box:hover{
+                                border: 1px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid #ccc;
+                text-align: center;
+                height: calc(100% - 360px);
+                padding: 10px;
+
+                // position: relative;
+                button {
+                    background: rgba(0, 0, 0, 0.836);
+                    padding: 15px 25px;
+                    border: none;
+                    color: white;
+                    border-radius: 10px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+@keyframes bot-top {
+    to {
+        bottom: 20px;
+    }
+}

@@ -1,7 +1,7 @@
 import  './setting.scss'
 
 export function Setting({values}) {
- console.log(values);
+ // console.log(values);
   return (
       <>
         <div className={!values? "setting open":"setting"}>

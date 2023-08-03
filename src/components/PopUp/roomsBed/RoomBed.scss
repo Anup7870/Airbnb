@@ -1,0 +1,14 @@
+.c1{
+  width: 70px;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.c1:hover{
+  border:1px solid black;
+}
