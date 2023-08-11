@@ -4,10 +4,9 @@ import Context from "../../context api/context.js";
 import { LuSettings2 } from "react-icons/lu";
 import Nanfilter from "../../JSON/Nanfilter.json";
 
-
 const navSlider = () => {
   const a = useContext(Context);
-  console.log(a)
+  console.log(a);
   return (
     <>
       <div className='filterCont'>
@@ -16,7 +15,13 @@ const navSlider = () => {
             {Nanfilter &&
               Nanfilter.map((record) => {
                 return (
-                  <div className='icons' key={record.id}>
+                  <div
+                    className='icons'
+                    key={record.id}
+                    onClick={() => {
+                      a.SetGlobal({ ...a.global, filterAct: record.id });
+                      cosole.log(a.global);
+                    }}>
                     <img src={record.url} alt='logo' />
                     <p>{record.name}</p>
                   </div>
@@ -24,12 +29,15 @@ const navSlider = () => {
               })}
           </div>
         </div>
-        
-        <div className='filter' onClick={()=>{a.SetGlobal({...a.global,filter:true} )}}>
+
+        <div
+          className='filter'
+          onClick={() => {
+            a.SetGlobal({ ...a.global, filter: true });
+          }}>
           <LuSettings2 />
           <p>Filters</p>
         </div>
-        
       </div>
     </>
   );

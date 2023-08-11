@@ -5,6 +5,7 @@ import {useState} from "react";
 const GlobalState =(props)=>{
   const globalData = {
     "filter":false,
+    "filterAct":1,
     "navOpen":false
   }
   const [global,SetGlobal] = useState(globalData)

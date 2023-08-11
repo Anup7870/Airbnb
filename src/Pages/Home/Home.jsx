@@ -6,6 +6,8 @@ import { useContext } from "react";
 import Context from "../../context api/context.js";
 import Modal from '../../components/PopUp/Modal.jsx'
 import Filter from "../../components/PopUp/filter/Filter.jsx"
+import TotalPrice from "../../components/totalPrice/TotalPrice.jsx";
+import CardCont from "../../components/cardCont/CardCont.jsx";
 const home = () => {
   const a = useContext(Context);
   return (
@@ -15,6 +17,8 @@ const home = () => {
         </NavState>
         <div className='globalWrapper'>
           <NavSlider />
+          <TotalPrice/>
+          <CardCont />
         </div>
         <Modal open={a.global.filter}>
           <Filter  />

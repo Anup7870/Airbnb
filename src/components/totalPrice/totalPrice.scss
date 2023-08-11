@@ -1,0 +1,49 @@
+.MuiSwitch-track{
+  border-radius: 20px !important;
+}
+.MuiSwitch-thumb{
+  // top: 1px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+.css-1c0u7xu-MuiSwitch-root{
+  width: 65px !important;
+}
+.totalPrice{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ 
+  .wrapper{
+    display: flex;
+    width: 50%;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 5px;
+    border-radius: 15px;
+    .info{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      h4{
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 5px;
+      }
+
+      .line{
+        margin: 0 10px;
+        width: 1px;
+        height: 20px; 
+        background-color: #ccc;
+      }
+      p{
+        color: #717171;
+      }
+    }
+  }
+}
