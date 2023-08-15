@@ -1,3 +1,6 @@
+.middleMoreCont{
+    // display: block;
+}
 .middleNavCont{
     padding: 0.5rem;
     border: 1px solid #DDDDDD;
@@ -9,7 +12,7 @@
     transition: all 0.3s ease;
     cursor: pointer;
     margin-left: 50px;
-    //display: none;
+    // display: none;
     .intial{
         display: flex;
         justify-content:flex-start ;

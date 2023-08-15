@@ -20,7 +20,7 @@ const navSlider = () => {
                     key={record.id}
                     onClick={() => {
                       a.SetGlobal({ ...a.global, filterAct: record.id });
-                      cosole.log(a.global);
+                      cosole.log(a.global.filter);
                     }}>
                     <img src={record.url} alt='logo' />
                     <p>{record.name}</p>

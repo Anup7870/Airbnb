@@ -8,7 +8,7 @@ import {CgProfile} from "react-icons/cg"
 import {Setting} from "./Setting.jsx";
 import MiddleNav from "./middlleNav/MiddleNav.jsx";
 import {ActiveMiddleNav} from "./middlleNav/ActiveMiddleNav.jsx";
-
+import NavBarMobile from "../Mobile/nav/NavBarNavBar.jsx";
 // Sub component parts
 
 const EndNav = () =>{
@@ -16,6 +16,7 @@ const EndNav = () =>{
 
   return (
       <>
+      
         <div className="endNav">
           <div className="buttonNavEnd">
             <p>Airbnb Your Home</p>
@@ -41,6 +42,7 @@ const EndNav = () =>{
 export function NavBar() {
   return (
       <>
+      <NavBarMobile/>
         <div className="navBarcont">
           <nav>
             <img src={logo} alt="AirBab Logo" className="logo"/>

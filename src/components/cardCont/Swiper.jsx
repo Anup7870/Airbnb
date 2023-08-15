@@ -5,7 +5,7 @@ register();
 
 const MySwiper = (images) => {
   const swiperRef = useRef(null);
-  console.log(images.images);
+  // console.log(images.images);
   useEffect(() => {
     const swiperContainer = swiperRef.current;
     const params = {

@@ -1,0 +1,14 @@
+.mobileNav{
+  position: fixed;
+  top: 0;
+  padding: 1rem 2.5rem;
+  border-bottom: 1px solid #DDDDDD;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 999;
+  overflow-y: hidden;
+}

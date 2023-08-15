@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-     z-index: 999;
+     z-index: 999;  ;
   nav{
     width: 100%;
     display: flex;
@@ -98,3 +98,10 @@
 
 }
 
+// media query
+
+@media screen and (max-width: 768px) {
+    .navBarcont{
+       display: none;
+    }
+}
