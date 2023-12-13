@@ -3,16 +3,21 @@
     justify-content: space-between;
     width: 100%;
     margin-top: 102px;
+    
     .navFilter{
+        
         .navFilterItems{
-            
+          
             .icons{
                 cursor:pointer;
                 img{
+                    // height: 2.5rem;
+                    // width: 2.5rem;
                     opacity: .6;
                     z-index: -1;
                 }
             }
+            // @media
             .icons:hover{
                 img{
                     opacity: 1;
@@ -21,6 +26,11 @@
                     color: black;
                 }
             }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .navFilter{
+            overflow: scroll;
         }
     }
     .filter{
@@ -34,6 +44,11 @@
         transition: all 0.3s ease;
         cursor: pointer;
         margin-left: 40px;
+    }
+    @media screen and (max-width: 768px) {
+        .filter{
+           display: none;
+        }
     }
 
 }

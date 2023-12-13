@@ -6,7 +6,6 @@ import Nanfilter from "../../JSON/Nanfilter.json";
 
 const navSlider = () => {
   const a = useContext(Context);
-  console.log(a);
   return (
     <>
       <div className='filterCont'>

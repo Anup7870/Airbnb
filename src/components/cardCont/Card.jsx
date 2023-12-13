@@ -9,15 +9,13 @@ export default function Card(data) {
   const [current, setCurrent] = useState(1);
   let a = useContext(Context);
   let op = HomeData.filter((record)=>record.id === parseInt(a.global.filterAct));
-  // console.log(op[a.global.filterAct-1]);
-  console.log(op)
   let datas = op[0];
   return (
     <>
       {
             // eslint-disable-next-line react/jsx-no-comment-textnodes
             datas && datas.info.map((record) => {
-              console.log(record);
+              // console.log(record);
               return (
                 <div className='card' key={record.id}>
                   <div className='cardImage'>

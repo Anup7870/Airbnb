@@ -42,7 +42,7 @@ const MySwiper = (images) => {
       {
         // eslint-disable-next-line react/prop-types
         images&&images.images.map((images) => {
-          console.log(images)
+          // console.log(images)
           return (
             <swiper-slide class='swiper-slide'>
               <img src={images} />
